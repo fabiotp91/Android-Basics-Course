@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.helloandroid.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/udacity" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Udacity"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#1565C0"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/street"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="82dp"
+            android:src="@drawable/street" />
+
+        <TextView
+            android:id="@+id/text_street"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/street"
+            android:layout_marginTop="36dp"
+            android:layout_marginLeft="24dp"
+            android:text="2465 Latham St"
+            android:textStyle="bold"
+            android:textColor="#1565C0"/>
+
+        <TextView
+            android:id="@+id/text_street2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_street"
+            android:layout_toRightOf="@id/street"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="24dp"
+            android:text="Mountain View, CA 94043"
+            android:textStyle="bold"
+            android:textColor="#1565C0"/>
+
+        <ImageView
+            android:id="@+id/phone"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:scaleType="centerCrop"
+            android:layout_below="@id/street"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="82dp"
+            android:src="@drawable/phone" />
+
+        <TextView
+            android:id="@+id/text_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_street2"
+            android:layout_toRightOf="@id/phone"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="24dp"
+            android:textSize="16dp"
+            android:text="650-555-5555"
+            android:textStyle="bold"
+            android:textColor="#1565C0"/>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
