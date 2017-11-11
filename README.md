@@ -1,4 +1,5 @@
 ##Android Basics Course
+
 I will keep all the projects here for easy access to other students so that they can learn new things with my projects, get feedback from other people about my projects and even to improve them.
 
 ## Installation
@@ -28,6 +29,7 @@ This project is also translated to Portuguese.
 ![enter image description here](https://lh3.googleusercontent.com/AO4lh0u4T7mes4X7KaG1pO_c0ucCtrjq5E4-38BP3wrI-_BJlRID6NqeOjcrcGPlOyYdCJdL2_oITA=s600 "studio64_2017-11-11_14-32-52.png")
 
 ##**Court Counter**
+
 ![enter image description here](https://lh3.googleusercontent.com/-L-BAWYRfey4/WgcM2u77AII/AAAAAAABFeo/U2fRz79BMdg-HxA4N-B7ua9kN1TeyhIQQCLcBGAs/s600/studio64_2017-11-11_14-33-24.png)
 
 ##**Happy Birthday**
