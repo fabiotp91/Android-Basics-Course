@@ -1,0 +1,3 @@
+[submodule "ColorBlindness"]
+	path = ColorBlindness
+	url = git@gitlab.com:fabiotrilhopereira/Android-Basics-Course.git
