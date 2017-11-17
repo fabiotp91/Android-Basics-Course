@@ -110,11 +110,31 @@ public class MainActivity extends AppCompatActivity {
         CheckBox q3Answer3Check = findViewById(R.id.q3_answer3_check);
         boolean isQ3A3Checked = q3Answer3Check.isChecked();
 
+        /**
+         * Find wrong checkboxes
+         */
+        CheckBox q3Answer1Check = findViewById(R.id.q3_answer1_check);
+        boolean isQ3A1Checked = q3Answer1Check.isChecked();
+
+        CheckBox q3Answer4Check = findViewById(R.id.q3_answer4_check);
+        boolean isQ3A4Checked = q3Answer4Check.isChecked();
+        /** */
+
         CheckBox q4Answer1Check = findViewById(R.id.q4_answer1_check);
         boolean isQ4A1Checked = q4Answer1Check.isChecked();
 
         CheckBox q4Answer4Check = findViewById(R.id.q4_answer4_check);
         boolean isQ4A4Checked = q4Answer4Check.isChecked();
+
+        /**
+         * Find wrong checkboxes
+         */
+        CheckBox q4Answer2Check = findViewById(R.id.q4_answer2_check);
+        boolean isQ4A2Checked = q4Answer2Check.isChecked();
+
+        CheckBox q4Answer3Check = findViewById(R.id.q4_answer3_check);
+        boolean isQ4A3Checked = q4Answer3Check.isChecked();
+        /** */
 
         EditText q5AnswerInput = findViewById(R.id.q5_answer_input);
         String getQ5Input = q5AnswerInput.getText().toString();
@@ -138,16 +158,16 @@ public class MainActivity extends AppCompatActivity {
          * Show toast with total score and message related to score
          */
         if (calculateScore(isQ1A3Checked, isQ2valid(getQ2Input),
-                isQ3Right(isQ3A2Checked, isQ3A3Checked),
-                isQ4Right(isQ4A1Checked, isQ4A4Checked),
+                isQ3Right(isQ3A2Checked, isQ3A3Checked, isQ3A1Checked, isQ3A4Checked),
+                isQ4Right(isQ4A1Checked, isQ4A4Checked, isQ4A2Checked, isQ4A3Checked),
                 isQ5valid(getQ5Input), isQ6A2Checked,
                 isQ7A3Checked, isQ8valid(getQ8Input),
                 isQ9valid(getQ9Input), isQ10valid(getQ10Input)) < 5) {
 
             Toast.makeText(MainActivity.this, getString(R.string.your_score) +
                             calculateScore(isQ1A3Checked, isQ2valid(getQ2Input),
-                                    isQ3Right(isQ3A2Checked, isQ3A3Checked),
-                                    isQ4Right(isQ4A1Checked, isQ4A4Checked),
+                                    isQ3Right(isQ3A2Checked, isQ3A3Checked, isQ3A1Checked, isQ3A4Checked),
+                                    isQ4Right(isQ4A1Checked, isQ4A4Checked, isQ4A2Checked, isQ4A3Checked),
                                     isQ5valid(getQ5Input), isQ6A2Checked,
                                     isQ7A3Checked, isQ8valid(getQ8Input),
                                     isQ9valid(getQ9Input), isQ10valid(getQ10Input))
@@ -155,22 +175,22 @@ public class MainActivity extends AppCompatActivity {
                     Toast.LENGTH_LONG).show();
         }
         if (calculateScore(isQ1A3Checked, isQ2valid(getQ2Input),
-                isQ3Right(isQ3A2Checked, isQ3A3Checked),
-                isQ4Right(isQ4A1Checked, isQ4A4Checked),
+                isQ3Right(isQ3A2Checked, isQ3A3Checked, isQ3A1Checked, isQ3A4Checked),
+                isQ4Right(isQ4A1Checked, isQ4A4Checked, isQ4A2Checked, isQ4A3Checked),
                 isQ5valid(getQ5Input), isQ6A2Checked,
                 isQ7A3Checked, isQ8valid(getQ8Input),
                 isQ9valid(getQ9Input), isQ10valid(getQ10Input)) >= 5 &&
                 calculateScore(isQ1A3Checked, isQ2valid(getQ2Input),
-                isQ3Right(isQ3A2Checked, isQ3A3Checked),
-                isQ4Right(isQ4A1Checked, isQ4A4Checked),
+                isQ3Right(isQ3A2Checked, isQ3A3Checked, isQ3A1Checked, isQ3A4Checked),
+                isQ4Right(isQ4A1Checked, isQ4A4Checked, isQ4A2Checked, isQ4A3Checked),
                 isQ5valid(getQ5Input), isQ6A2Checked,
                 isQ7A3Checked, isQ8valid(getQ8Input),
                 isQ9valid(getQ9Input), isQ10valid(getQ10Input)) <=9) {
 
             Toast.makeText(MainActivity.this, getString(R.string.your_score) +
                             calculateScore(isQ1A3Checked, isQ2valid(getQ2Input),
-                                    isQ3Right(isQ3A2Checked, isQ3A3Checked),
-                                    isQ4Right(isQ4A1Checked, isQ4A4Checked),
+                                    isQ3Right(isQ3A2Checked, isQ3A3Checked, isQ3A1Checked, isQ3A4Checked),
+                                    isQ4Right(isQ4A1Checked, isQ4A4Checked, isQ4A2Checked, isQ4A3Checked),
                                     isQ5valid(getQ5Input), isQ6A2Checked,
                                     isQ7A3Checked, isQ8valid(getQ8Input),
                                     isQ9valid(getQ9Input), isQ10valid(getQ10Input))
@@ -178,16 +198,16 @@ public class MainActivity extends AppCompatActivity {
                     Toast.LENGTH_LONG).show();
         }
         if (calculateScore(isQ1A3Checked, isQ2valid(getQ2Input),
-                isQ3Right(isQ3A2Checked, isQ3A3Checked),
-                isQ4Right(isQ4A1Checked, isQ4A4Checked),
+                isQ3Right(isQ3A2Checked, isQ3A3Checked, isQ3A1Checked, isQ3A4Checked),
+                isQ4Right(isQ4A1Checked, isQ4A4Checked, isQ4A2Checked, isQ4A3Checked),
                 isQ5valid(getQ5Input), isQ6A2Checked,
                 isQ7A3Checked, isQ8valid(getQ8Input),
                 isQ9valid(getQ9Input), isQ10valid(getQ10Input)) == 10) {
 
             Toast.makeText(MainActivity.this, getString(R.string.your_score) +
                             calculateScore(isQ1A3Checked, isQ2valid(getQ2Input),
-                                    isQ3Right(isQ3A2Checked, isQ3A3Checked),
-                                    isQ4Right(isQ4A1Checked, isQ4A4Checked),
+                                    isQ3Right(isQ3A2Checked, isQ3A3Checked, isQ3A1Checked, isQ3A4Checked),
+                                    isQ4Right(isQ4A1Checked, isQ4A4Checked, isQ4A2Checked, isQ4A3Checked),
                                     isQ5valid(getQ5Input), isQ6A2Checked,
                                     isQ7A3Checked, isQ8valid(getQ8Input),
                                     isQ9valid(getQ9Input), isQ10valid(getQ10Input))
@@ -237,12 +257,12 @@ public class MainActivity extends AppCompatActivity {
      * Check if 2 checkboxes are right
      * If one is wrong, it's still a wrong answer
      */
-    private boolean isQ3Right(boolean isQ3A2Checked, boolean isQ3A3Checked) {
-        return isQ3A2Checked && isQ3A3Checked;
+    private boolean isQ3Right(boolean isQ3A2Checked, boolean isQ3A3Checked, boolean isQ3A1Checked, boolean isQ3A4Checked) {
+        return isQ3A2Checked && isQ3A3Checked && !isQ3A1Checked && !isQ3A4Checked;
     }
 
-    private boolean isQ4Right(boolean isQ4A1Checked, boolean isQ4A4Checked) {
-        return isQ4A1Checked && isQ4A4Checked;
+    private boolean isQ4Right(boolean isQ4A1Checked, boolean isQ4A4Checked, boolean isQ4A2Checked, boolean isQ4A3Checked) {
+        return isQ4A1Checked && isQ4A4Checked && !isQ4A2Checked && !isQ4A3Checked;
     }
 
     /**
