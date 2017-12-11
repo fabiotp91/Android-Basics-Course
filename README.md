@@ -22,32 +22,32 @@ and not just another quiz app about something I like.
 
 This project is also translated to Portuguese.
 
-![studio64_2017-11-11_14-30-39.png]({{site.baseurl}}/studio64_2017-11-11_14-30-39.png)
+![studio64_2017-11-11_14-30-39.png](/studio64_2017-11-11_14-30-39.png)
 
 
 ## **Cookies**
 
-![studio64_2017-11-11_14-32-52.png]({{site.baseurl}}/studio64_2017-11-11_14-32-52.png)
+![studio64_2017-11-11_14-32-52.png](/studio64_2017-11-11_14-32-52.png)
 
 ## **Court Counter**
 
-![studio64_2017-11-11_14-33-24.png]({{site.baseurl}}/studio64_2017-11-11_14-33-24.png)
+![studio64_2017-11-11_14-33-24.png](/studio64_2017-11-11_14-33-24.png)
 
 ## **Happy Birthday**
 
 My Happy Birthday Card is different because I wanted to create something that I could use if I needed,
 so I created a Business Card App, I intend on improving it so that it can be used as a portfolio for my work.
 
-![studio64_2017-11-11_14-33-54.png]({{site.baseurl}}/studio64_2017-11-11_14-33-54.png)
+![studio64_2017-11-11_14-33-54.png](/studio64_2017-11-11_14-33-54.png)
 
 ## **Hello Android**
 
-![studio64_2017-11-11_14-34-17.png]({{site.baseurl}}/studio64_2017-11-11_14-34-17.png)
+![studio64_2017-11-11_14-34-17.png](/studio64_2017-11-11_14-34-17.png)
 
 ## **Just Java**
 
-![studio64_2017-11-11_14-34-37.png]({{site.baseurl}}/studio64_2017-11-11_14-34-37.png)
+![studio64_2017-11-11_14-34-37.png](/studio64_2017-11-11_14-34-37.png)
 
 ## **Soccer Counter**
 
-![studio64_2017-11-11_14-34-50.png]({{site.baseurl}}/studio64_2017-11-11_14-34-50.png)
+![studio64_2017-11-11_14-34-50.png](/studio64_2017-11-11_14-34-50.png)
